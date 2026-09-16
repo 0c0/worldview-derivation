@@ -1,0 +1,4 @@
+# 仓库内 markdown 一律以 LF 存取：保证源码与安装副本可逐字节比对
+# （本机 core.autocrlf=true，不锁行尾则下次 git 触碰会把工作树改成 CRLF，
+#   与 skill 目录下的副本 sha256 失配，同步校验会假报不一致）
+*.md text eol=lf
